@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
 
         const newLeaveRequest = {
-            employeeId: loggedInUser.empId,
+            employeeId: loggedInUser.employeeId,
             reason,
             dateFrom,
             numOfDays,
@@ -103,5 +103,5 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
 
 
-    loadLeaveRequests(loggedInUser.empId);
+    loadLeaveRequests(loggedInUser.employeeId);
 });

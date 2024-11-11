@@ -14,29 +14,30 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
 
         const response = await fetch(`http://localhost:3000/users?username=${username}&password=${password}&_embed=employee`);
-        //console.log(response);
+       
 
 
         const users = await response.json();
-        //console.log(users);
+        
 
 
         if (users.length > 0) {
             const user = users[0];
-            //console.log(user);
-            // Find the associated employee data
+           
             const employee = user.employee;
 
 
-            //console.log(employee);
+           
 
 
             if (employee) {
                 // Store the logged-in user and employee details
                 const loggedInUser = {
-                    ...user,
+                    username:user.username,
+                    employeeId:employee.employeeId,
                     firstName: employee.firstName,
                     lastName: employee.lastName,
+                    role:user.role
                 };
 
 
