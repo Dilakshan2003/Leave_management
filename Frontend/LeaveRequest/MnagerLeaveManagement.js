@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             const li = document.createElement('li');
             li.classList.add('leave-item');
             li.innerHTML = `
+                <div><b>Requested By : ${request.employee.firstName+ " " + request.employee.lastName}<b></div>
                 <div>Reason: ${request.reason}</div>
                 <div>From: ${request.dateFrom}</div>
                 <div>Days: ${request.numOfDays}</div>
