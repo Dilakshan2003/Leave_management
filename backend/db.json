@@ -1,6 +1,24 @@
 {
-  "employees": [],
-  "users": [],
+  "employees": [
+    {
+      "id": "EMP_gXm2Z",
+      "employeeId": "EMP_gXm2Z",
+      "nic": "123456788",
+      "firstName": "dilu",
+      "lastName": "dilaks",
+      "dob": "2003-11-17",
+      "doj": "2024-11-13"
+    }
+  ],
+  "users": [
+    {
+      "id": "EMP_gXm2Z",
+      "employeeId": "EMP_gXm2Z",
+      "username": "EMP_gXm2Z",
+      "password": "EMP_gXm2Z",
+      "role": "Employee"
+    }
+  ],
   "leaveRequests": [
     {
       "id": "e491",
