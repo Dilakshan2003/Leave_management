@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Navbar</title>
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/style.css">
     {{style}}
 </head>
 
@@ -20,8 +20,8 @@
             <div class="dropdown">
                 <button class="dropbtn">Leave Management</button>
                 <div class="dropdown-content">
-                    <a href="#">Apply Leave</a>
-                    <a href="#">Manage Leave</a>
+                    <a href="LeaveRequest">Apply Leave</a>
+                    <a href="/Frontend/views/LeaveRequest/ManagerLeaveManagement.html">Manage Leave</a>
 
                 </div>
 
@@ -31,7 +31,7 @@
 
     </nav>
     <main>
-      {{content}}  
+   {{content}}
     </main>
     {{script}}
 </body>

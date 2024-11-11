@@ -68,14 +68,24 @@ const server = http.createServer(async (req, res) => {
 
 
   // Handle HTML page requests
-  let filePath = "./views/Home/index.html";
-  let layout_use = "./layouts/layout_user.html";
+  let filePath = "./views/index.html";
+  let layout_use = "./layouts/Topnavigation.html";
 
 
   if (req.url === "/") {
-    filePath = "./views/Home/index.html";
-  } else if (req.url === "/about") {
-    filePath = "./views/about.html";
+    filePath = "./views/index.html";
+    layout_use = "./layouts/Topnavigation.html";
+
+  } else if (req.url === "/employees") {
+    filePath = "./views/employees/index.html";
+    layout_use = "./layouts/Topnavigation.html";
+    
+  
+  } else if (req.url === "/LeaveRequest") {
+    filePath = "./views/LeaveRequest/LeaveRequest.html";
+    layout_use = "./layouts/Topnavigation.html";
+    
+
   } else {
     res.writeHead(404, { "Content-Type": "text/html" });
     return res.end("<h1>404 Not Found</h1>");
@@ -116,6 +126,8 @@ function getContentType(filePath) {
       return "application/octet-stream";
   }
 }
+
+
 
 
 // Set the server to listen on port 3000

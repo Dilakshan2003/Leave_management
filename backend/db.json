@@ -8,6 +8,15 @@
       "lastName": "Dilakshan",
       "dob": "2003-11-17",
       "doj": "2024-11-13"
+    },
+    {
+      "id": "EMP_5r0si",
+      "employeeId": "EMP_5r0si",
+      "nic": "12121831",
+      "firstName": "dilu",
+      "lastName": "dilaks",
+      "dob": "2024-11-08",
+      "doj": "2024-11-14"
     }
   ],
   "users": [
@@ -16,6 +25,13 @@
       "employeeId": "EMP_gXm2Z",
       "username": "EMP_gXm2Z",
       "password": "EMP_gXm2Z",
+      "role": "Employee"
+    },
+    {
+      "id": "EMP_5r0si",
+      "employeeId": "EMP_5r0si",
+      "username": "EMP_5r0si",
+      "password": "pwd123",
       "role": "Employee"
     }
   ],
